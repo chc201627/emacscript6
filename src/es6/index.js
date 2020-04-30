@@ -65,3 +65,45 @@ console.log(global)
 console.log(globalLet)
 
 const a  = 'b'
+
+
+let name = 'Camilo'
+let age = 30
+//ES5
+obj = {name: namem, age:age}
+
+//ES6
+obj2 = {name,age}
+
+const name = [
+    {name: 'Camilo', age:30},
+    {name: 'Martha', age:40}
+]
+
+let listOfName = name.map(item=>console.log(item.name))
+
+const listOfName3 = (name,age,country)=>{
+    ...
+}
+
+const listOfName4 = name =>{
+    ...
+}
+
+const square = num => num * num;
+
+const helloPromise = () =>{
+
+    return new Promise((resolve,reject)=>{
+        if(true){
+            resolve('HEY!')
+        }else{
+            reject('UPS!')
+        }
+    })
+
+}
+
+helloPromise()
+.then(res => console.log(res))
+.catch(err => console.log(err))
